@@ -47,3 +47,35 @@ html{
     stroke: aqua;
     filter: blur(1px) drop-shadow(0 0 10px aqua)  drop-shadow(0 0 200px aqua) ;
 }
+.command{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50vh;
+    width: 100%;
+}
+.command button{
+    height: 10vh;
+    width: 10%;
+    border: 1px solid var(--border-mouth);
+    margin: 2%;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: larger;
+    font-family: system-ui, -apple-system;
+}
+.command button:hover{
+    transition: 1s ease-in-out;
+    background-color: var(--border-mouth);
+}
+.command input{
+    height: 5vh;
+    width: 5%;
+    border: 1px solid var(--border-mouth);
+    border-radius: 5px;
+    margin: 2%;
+    background-color: transparent;
+    color: #fff;
+}

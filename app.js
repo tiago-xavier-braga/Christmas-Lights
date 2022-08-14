@@ -1,15 +1,14 @@
-function turnOn() {
-    var light = document.getElementById('light');
-    const speed = document.getElementById('speed').value * 1000;
-    console.log(speed)
+var light = document.getElementById('light');
+
+function sleep(milliseconds) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds))
+};
+
+async function turnOn() {
+
+        light.className = light.className.concat(' on')
+        await sleep(document.getElementById('speed').value * 1000);
+        light.className = 'light'; 
 
 
-    while(true){
-        setTimeout(function(){
-            light.className = light.className.concat(' on')
-            clearInterval();
-        }, speed);
-            
-        light.className = 'light';
-    }
 }

@@ -39,13 +39,6 @@ html{
     width: 50px;
     background: aqua;
     position: relative;
-    transition: 1s all ease;
-    
-}
-.light.on{
-    fill: white;
-    stroke: aqua;
-    filter: blur(1px) drop-shadow(0 0 10px aqua)  drop-shadow(0 0 200px aqua) ;
 }
 .command{
     display: flex;
@@ -78,4 +71,20 @@ html{
     margin: 2%;
     background-color: transparent;
     color: #fff;
+}
+
+@keyframes onLight{
+    from {
+        filter: drop-shadow(0 0 0);
+    }
+    to {
+
+        fill: white;
+        stroke: aqua;
+        filter: blur(1px) drop-shadow(0 0 10px aqua)  drop-shadow(0 0 200px aqua) ;
+    }
+}
+
+.on {
+    animation: onLight 1s alternate infinite ease-in-out;
 }

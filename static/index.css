@@ -80,11 +80,7 @@ html{
     to {
 
         fill: white;
-        stroke: aqua;
-        filter: blur(1px) drop-shadow(0 0 10px aqua)  drop-shadow(0 0 200px aqua) ;
+        stroke: #fff;
+        filter: blur(1px) drop-shadow(0 0 10px #fff)  drop-shadow(0 0 200px #fff) ;
     }
-}
-
-.on {
-    animation: onLight 1s alternate infinite ease-in-out;
 }

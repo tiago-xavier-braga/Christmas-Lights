@@ -8,7 +8,7 @@ html{
 }
 .box_vertical{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     height: 8rem;
@@ -40,12 +40,24 @@ html{
     background: aqua;
     position: relative;
 }
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.title h1{
+    font-size: 12vh;
+    color: #fff;
+    filter: drop-shadow(2px 0px 8px #fff);
+}
 .command{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 50vh;
+    margin-top: 14vh;
     width: 100%;
 }
 .command button{
@@ -72,7 +84,6 @@ html{
     background-color: transparent;
     color: #fff;
 }
-
 @keyframes onLight{
     from {
         filter: drop-shadow(0 0 0);

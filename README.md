@@ -1,6 +1,10 @@
 # Christmas-Lights
 This is the project that I developed based on repository [App-Ideas](https://github.com/florinpop17/app-ideas). 
 
+![](/static/print.png)
+
+### [Git Page](https://tiago-xavier-braga.github.io/Christmas-Lights/)
+
 **Tier:** 1-Beginner
 
 The ChristmasLights application relies on your development talents to create
